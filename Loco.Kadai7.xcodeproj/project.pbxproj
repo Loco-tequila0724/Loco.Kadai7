@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		3863075426860AD900347CE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3863075326860AD900347CE0 /* AppDelegate.swift */; };
 		3863075626860AD900347CE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3863075526860AD900347CE0 /* SceneDelegate.swift */; };
-		3863075826860AD900347CE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3863075726860AD900347CE0 /* ViewController.swift */; };
 		3863075B26860AD900347CE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3863075926860AD900347CE0 /* Main.storyboard */; };
 		3863075D26860ADC00347CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3863075C26860ADC00347CE0 /* Assets.xcassets */; };
 		3863076026860ADC00347CE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3863075E26860ADC00347CE0 /* LaunchScreen.storyboard */; };
+		38F1135026860D29006AD225 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 38F1134F26860D29006AD225 /* .swiftlint.yml */; };
+		38F1135226860DB8006AD225 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F1135126860DB8006AD225 /* GreenViewController.swift */; };
+		38F1135426860DD9006AD225 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F1135326860DD9006AD225 /* RedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3863075026860AD900347CE0 /* Loco.Kadai7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loco.Kadai7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3863075326860AD900347CE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3863075526860AD900347CE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3863075726860AD900347CE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3863075A26860AD900347CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3863075C26860ADC00347CE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3863075F26860ADC00347CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3863076126860ADC00347CE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38F1134F26860D29006AD225 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		38F1135126860DB8006AD225 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		38F1135326860DD9006AD225 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		3863074726860AD900347CE0 = {
 			isa = PBXGroup;
 			children = (
+				38F1134F26860D29006AD225 /* .swiftlint.yml */,
 				3863075226860AD900347CE0 /* Loco.Kadai7 */,
 				3863075126860AD900347CE0 /* Products */,
 			);
@@ -58,7 +63,8 @@
 			children = (
 				3863075326860AD900347CE0 /* AppDelegate.swift */,
 				3863075526860AD900347CE0 /* SceneDelegate.swift */,
-				3863075726860AD900347CE0 /* ViewController.swift */,
+				38F1135326860DD9006AD225 /* RedViewController.swift */,
+				38F1135126860DB8006AD225 /* GreenViewController.swift */,
 				3863075926860AD900347CE0 /* Main.storyboard */,
 				3863075C26860ADC00347CE0 /* Assets.xcassets */,
 				3863075E26860ADC00347CE0 /* LaunchScreen.storyboard */,
@@ -77,6 +83,7 @@
 				3863074C26860AD900347CE0 /* Sources */,
 				3863074D26860AD900347CE0 /* Frameworks */,
 				3863074E26860AD900347CE0 /* Resources */,
+				3863076726860B7B00347CE0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -124,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F1135026860D29006AD225 /* .swiftlint.yml in Resources */,
 				3863076026860ADC00347CE0 /* LaunchScreen.storyboard in Resources */,
 				3863075D26860ADC00347CE0 /* Assets.xcassets in Resources */,
 				3863075B26860AD900347CE0 /* Main.storyboard in Resources */,
@@ -132,12 +140,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3863076726860B7B00347CE0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3863074C26860AD900347CE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3863075826860AD900347CE0 /* ViewController.swift in Sources */,
+				38F1135426860DD9006AD225 /* RedViewController.swift in Sources */,
+				38F1135226860DB8006AD225 /* GreenViewController.swift in Sources */,
 				3863075426860AD900347CE0 /* AppDelegate.swift in Sources */,
 				3863075626860AD900347CE0 /* SceneDelegate.swift in Sources */,
 			);
